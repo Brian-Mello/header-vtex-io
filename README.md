@@ -1,4 +1,4 @@
-## Summary
+## Sumário
 * [Informação geral](#Informação-geral)
 * [Tecnologias](#Tecnologias)
 * [Configuração](#configuração)
