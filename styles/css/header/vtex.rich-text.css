@@ -1,0 +1,88 @@
+.container--top-bar {
+    width: 100%;
+    height: 25px;
+    background-color: #BDBDBD;
+    font-size: 12px;
+}
+
+.paragraph--top-bar {
+    margin: 0;
+}
+
+:global(.vtex-rich-text-0-x-heading){
+    margin: 5px 0;
+    font-size: 24px;
+}
+
+:global(.vtex-rich-text-0-x-paragraph){
+    font-family: "Roboto";
+    text-align: center;
+    margin: 0;
+}
+
+.link {
+    text-decoration: none;
+    font-size: 12px;
+    font-family: "Roboto";
+    color: #003348;
+}
+
+.paragraph--search-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container--search-icon::before {
+    content: "";
+    background: url('https://codeby.vteximg.com.br/arquivos/search-icon.svg');
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+}
+
+.paragraph--all-categories-header-title, 
+.paragraph--login-container-header-title {
+    position: absolute;
+    top: 18px;
+    left: 20px;
+    font-size: 18px;
+    font-family: 'Roboto';
+    font-weight: bold;
+}
+
+.paragraph--login-container-header-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paragraph--login-container-header-title::before{
+    content: "";
+    background: url('https://codeby.vteximg.com.br/arquivos/avatar-login-icon.svg');
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-position: center;
+    margin-right: 10px;
+}
+
+@media(min-width: 768px){
+
+}
+
+@media(min-width: 1200px){
+    
+}
+
+@media(min-width: 1366px){
+    
+}
+
+@media(min-width: 1920px){
+    
+}

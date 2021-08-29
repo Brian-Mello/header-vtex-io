@@ -1,0 +1,138 @@
+.openIconContainer {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.openIconContainer::after {
+  content: "Todas categorias";
+  color: black;
+  font: normal normal normal 12px/16px "Roboto";
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+.openIconContainer--search-bar-drawer::after {
+    content: "";
+    background: url("https://codeby.vteximg.com.br/arquivos/search-icon.svg");
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+}
+
+.openIconContainer--login-container-drawer::after {
+  content: "";
+  background: url("https://codeby.vteximg.com.br/arquivos/avatar-login-icon.svg");
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  background-size: contain;
+  background-position: center;
+  cursor: pointer;
+  margin: 0 20px;
+}
+
+.openIconContainer--search-bar-drawer .menuIcon--search-bar-drawer,
+.openIconContainer--login-container-drawer .menuIcon--login-container-drawer {
+    display: none;
+}
+
+.overlay {
+  background-color: #323232;
+}
+
+.drawer {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.closeIconContainer {
+  background-color: #eeeeee;
+  justify-content: flex-end !important;
+}
+
+:global(.vtex-menu-2-x-menuContainerNav--menu-drawer-mobile) {
+  width: 100% !important;
+}
+
+:global(.vtex-menu-2-x-styledLinkContent--menu-util-info) {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-weight: bold;
+  font-family: "Roboto";
+}
+
+:global(.vtex-menu-2-x-menuItem--category-nav) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.menuItem--menu-util-info .overflow-hidden{
+    height: auto;
+}
+
+:global(.vtex-menu-2-x-styledLinkContent--category-nav) {
+    font-size: 14px;
+}
+
+:global(.vtex-menu-2-x-accordionIcon--menu-util-info) {
+  position: absolute;
+  right: 0;
+  display: flex;
+  content: "";
+  font-size: 0;
+}
+
+:global(.vtex-menu-2-x-accordionIcon--menu-util-info--isClosed)::after {
+  content: "";
+  background: url("https://bosquedigital.vtexassets.com/assets/vtex/assets-builder/bosquedigital.bosquedigital/2.0.107/arrow-drop-right___2583a6a….svg");
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+}
+
+:global(.vtex-menu-2-x-accordionIcon--menu-util-info--isOpen)::after {
+  content: "";
+  background: url("https://bosquedigital.vtexassets.com/assets/vtex/assets-builder/bosquedigital.bosquedigital/2.0.107/arrow-drop-right___2583a6a….svg");
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  transform: rotate(90deg);
+}
+
+:global(.vtex-menu-2-x-styledLinkContainer--menu-util-info) {
+  border-bottom: 1px solid #e0e0e0;
+  margin: 0 10px;
+}
+
+@media (min-width: 768px) {
+  .drawer {
+    width: 85% !important;
+    max-width: 400px !important;
+  }
+  
+  .openIconContainer--search-bar-drawer {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .openIconContainer {
+    display: none;
+  }
+}
